@@ -1,93 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Flavors</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container" role="banner">
-            <nav role="navigation">
-                <a href="#hero">Home</a>
-                <a href="#features">Features</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <main>
-        <section id="hero" class="hero" role="region" aria-label="Hero Section">
-            <div class="container">
-                <h1>Welcome to Home Flavors</h1>
-                <p>Connect with home cooks and enjoy healthy, personalized meals.</p>
-                <a href="#features" class="cta-button" aria-label="Learn more about our features">Learn More</a>
-            </div>
-        </section>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
 
-        <section id="carousel" class="carousel" role="region" aria-label="Image Carousel">
-            <div class="container">
-                <div class="carousel-images">
-                    <img src="assets/images/Comida casera.png" alt="Homemade Meal 1">
-                    <img src="assets/images/comida casera2.jfif" alt="Homemade Meal 2">
-                    <img src="assets/images/comida casera3.jfif" alt="Homemade Meal 3">
-                </div>
-            </div>
-        </section>
+		<!-- Estilos CSS -->
+		<link rel="stylesheet" href="/css/style.css"/><!-- Estilos enfocados para mobile -->
+		<link rel="stylesheet" href="/css/style.css" media="screen and (min-width:408px)"/>
+		<link rel="stylesheet" href="/css/style.css" media="screen and (min-width:768px)"/>
+		<title>Sabores Cercanos</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#acerca">Acerca de</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+					<li><a href="#descarga">Descarga</a></li>
+				</ul>
+			</nav>
+		</header>
 
-        <section id="features" class="features" role="region" aria-label="Features Section">
-            <div class="container">
-                <h2>Our Features</h2>
-                <div>
-                    <h3>Personalized Meals</h3>
-                    <p>Select homemade menus based on your preferences.</p>
-                    <a href="#contact" class="cta-button" aria-label="Get personalized meals">Order Now</a>
-                </div>
-                <div>
-                 <h3>Local Cooks</h3>
-                    <p>Support home cooks and enjoy unique, authentic dishes.</p>
-                 </div>
-                <div>
-                    <h3>Culinary Community</h3>
-                    <p>Connect with persons who needs your dishes.</p>
-                    <a href="#contact" class="cta-button" aria-label="Join our culinary community">Join the Community</a>
-                </div>
-            </div>
-        </section>
+		<!-- Sección de Inicio -->
+		<section id="inicio">
+			<h1>Bienvenido a Sabores Cercanos</h1>
+			<p>Plataforma para conectar cocineros caseros con universitarios y profesionales.</p>
+		</section>
 
-        <section id="contact" class="contact" role="region" aria-label="Contact Section">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form role="form">
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">person</span>
-                        <input type="text" placeholder="Name" aria-label="Name" required>
-                    </div>
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">email</span>
-                        <input type="email" placeholder="Email" aria-label="Email" required>
-                    </div>
-                    <div class="input-group">
-                        <span class="material-icons" aria-hidden="true">message</span>
-                        <textarea placeholder="Message" rows="4" aria-label="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="cta-button" aria-label="Send message">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+		<!-- Sección Acerca de -->
+		<section id="acerca">
+			<h2>Acerca de</h2>
+			<p>Somos una plataforma dedicada a...</p>
+		</section>
 
-    <script>
-        
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.carousel-images img');
-        setInterval(() => {
-            images[currentIndex].style.display = 'none';
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].style.display = 'block';
-        }, 3000); 
-    </script>
-</body>
+		<!-- Sección Servicios -->
+		<section id="servicios">
+			<h2>Nuestros Servicios</h2>
+			<p>Ofrecemos...</p>
+		</section>
+
+		<!-- Sección Contacto -->
+		<section id="contacto">
+			<h2>Contacto</h2>
+			<form>
+				<!-- Formulario de contacto -->
+			</form>
+		</section>
+
+		<!-- Sección Descarga -->
+		<section id="descarga">
+			<h2>Descarga nuestra App</h2>
+			<button>Descargar</button>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<p>&copy; 2024 Sabores Cercanos. Todos los derechos reservados.</p>
+		</footer>
+	</body>
 </html>
